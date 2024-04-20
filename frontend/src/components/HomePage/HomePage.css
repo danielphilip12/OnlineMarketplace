@@ -1,0 +1,9 @@
+.HomePage-container {
+    margin: 5px 5%;
+}
+
+.HomePage-banner {
+    background-color: rgba(98, 186, 83, 0.75);
+    border-radius: 10px;
+    padding: 3px 10px;
+}

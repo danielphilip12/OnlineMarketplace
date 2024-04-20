@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Marvel Calendar",
+      "price": "20.99",
+      "inStock": true
+    },
+    { "id": 2, "name": "Dell Laptop", "price": "1200.99", "inStock": true },
+    { "id": 3, "name": "Mixing Bowl", "price": "10.99", "inStock": false }
+  ]
+}
