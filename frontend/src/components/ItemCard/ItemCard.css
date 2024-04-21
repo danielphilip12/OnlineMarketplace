@@ -1,0 +1,31 @@
+.ItemCard-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.ItemCard-detail {
+    margin: 0;
+    padding: 5px;
+}
+
+.ItemCard-button {
+    background-color: #c5e32c;
+    border: none;
+    padding: 4px;
+    border-radius: 3px;
+    margin-top: 10px;
+    color: white;
+}
+
+.ItemCard-button:hover {
+    background-color: #c4e32c9e; 
+}
+
+.ItemCard-button:active {
+    background-color: #869a1f; 
+}
+
+.ItemCard-button:disabled {
+    background-color: grey;
+    color: black;
+}
