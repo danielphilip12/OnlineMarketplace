@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import HomePage from './components/HomePage/HomePage';
 import ItemPage from './components/ItemPage/ItemPage';
+import AddItem from './components/AddItem/AddItem';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/:id",
     element: <ItemPage />
+  },
+  {
+    path: '/item/addItem',
+    element: <AddItem />
   }
 ])
 
