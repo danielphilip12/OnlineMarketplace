@@ -17,6 +17,18 @@
       "name": "Mixing Bowl",
       "price": "10.99",
       "inStock": false
+    },
+    {
+      "id": "5277373b-1127-40bc-8fb5-c50653755d4b",
+      "name": "DC Calendar",
+      "price": "10",
+      "inStock": true
+    },
+    {
+      "id": "03817652-ac20-4cd4-a8f1-5857c8391d8b",
+      "name": "Green Arrow Figure",
+      "price": "145",
+      "inStock": false
     }
   ]
 }

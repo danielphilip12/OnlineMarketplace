@@ -1,0 +1,38 @@
+.AddItem-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .AddItem-form label {
+    margin-bottom: 5px;
+  }
+  
+  .AddItem-form input[type="text"],
+  .AddItem-form input[type="number"],
+  .AddItem-form input[type="checkbox"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  .AddItem-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .AddItem-form button:hover {
+    background-color: #0056b3;
+  }
+  
