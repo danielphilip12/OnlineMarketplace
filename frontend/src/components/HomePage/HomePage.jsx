@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import "./HomePage.css";
 import axios from "axios";
 import ItemCard from "../ItemCard/ItemCard";
-import { Link } from "react-router-dom";
+import { Link, useOutletContext } from "react-router-dom";
 
 const HomePage = () => {
+  const [checkoutItems, addNewItem] = useOutletContext();
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -18,7 +19,7 @@ const HomePage = () => {
       <h1 className="HomePage-banner">Welcome to TBD</h1>
       <div className="HomePage-itemPreview">
         {items.map((item) => (
-          <ItemCard item={item} key={item.id}/>
+          <ItemCard item={item} key={item.id} addNewItem={addNewItem}/>
         ))}
       </div>
       <Link to="/item/addItem">Add Item</Link>

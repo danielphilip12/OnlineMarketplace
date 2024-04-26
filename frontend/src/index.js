@@ -1,19 +1,40 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // import App from './App';
-import reportWebVitals from './reportWebVitals';
-import HomePage from './components/HomePage/HomePage';
-import ItemPage, { loader as itemLoader } from './components/ItemPage/ItemPage';
-import AddItem from './components/AddItem/AddItem';
-import Wrapper from './components/Wrapper';
+import reportWebVitals from "./reportWebVitals";
+import HomePage from "./components/HomePage/HomePage";
+import ItemPage, { loader as itemLoader } from "./components/ItemPage/ItemPage";
+import AddItem from "./components/AddItem/AddItem";
+import Wrapper from "./components/Wrapper";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Wrapper />,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "/:id",
+        element: <ItemPage />,
+        loader: itemLoader,
+      },
+      {
+        path: "/item/addItem",
+        element: <AddItem />,
+      },
+    ],
+  },
+]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Wrapper />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
