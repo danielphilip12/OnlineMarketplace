@@ -8,6 +8,7 @@ import HomePage from "./components/HomePage/HomePage";
 import ItemPage, { loader as itemLoader } from "./components/ItemPage/ItemPage";
 import AddItem from "./components/AddItem/AddItem";
 import Wrapper from "./components/Wrapper";
+import CheckoutView from "./components/CheckoutView/CheckoutView";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
         path: "/item/addItem",
         element: <AddItem />,
       },
+      {
+        path: "/item/checkout",
+        element: <CheckoutView />
+      }
     ],
   },
 ]);

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Link, Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomePage from "./HomePage/HomePage";
 import ItemPage, { loader as itemLoader } from "./ItemPage/ItemPage";
 import AddItem from "./AddItem/AddItem";
@@ -11,7 +11,7 @@ const Wrapper = () => {
   };
   return (
     <div>
-      <p>Cart: {checkoutItems.length}</p>
+      <p><Link to="/item/checkout">Cart: {checkoutItems.length}</Link></p>
       <Outlet context={[checkoutItems, handleAddItem]} />
     </div>
   );
