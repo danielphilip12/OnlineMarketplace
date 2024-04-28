@@ -1,0 +1,18 @@
+.Navbar-Items {
+    display: flex;
+    background-color: lightblue;
+    height: 50px;
+}
+
+.Navbar-Items p {
+    padding: 0px 10px;
+    align-content: center;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    /* background-color: blueviolet; */
+    /* height: 100%; */
+    align-self: stretch;
+}

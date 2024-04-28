@@ -3,6 +3,7 @@ import { Link, Outlet, RouterProvider, createBrowserRouter } from "react-router-
 import HomePage from "./HomePage/HomePage";
 import ItemPage, { loader as itemLoader } from "./ItemPage/ItemPage";
 import AddItem from "./AddItem/AddItem";
+import Navbar from "./Navbar/Navbar";
 
 const Wrapper = () => {
   const [checkoutItems, setCheckoutItems] = useState([]);
@@ -11,7 +12,7 @@ const Wrapper = () => {
   };
   return (
     <div>
-      <p><Link to="/item/checkout">Cart: {checkoutItems.length}</Link></p>
+      <Navbar checkoutItems={checkoutItems} />
       <Outlet context={[checkoutItems, handleAddItem]} />
     </div>
   );
